@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header class="flex-center format left-animation">
+            <h1>Formulario</h1>
+        </header>
+        <main>
+            <form class="flex-center container-m right-animation" action="pochita.html">
+                 <!--Campo normal-->
+                <section class="container">
+                    <h2>Campo normal</h2>
+                    <div class="field-container">
+                        <label for="field">Campo</label>
+                        <input type="text" name="field">  
+                    </div>     
+                </section>
+
+                <!--Campo con passwd-->
+                <section class="container">
+                    <h2>Campo con passwd</h2>  
+                    <div class="field-container">
+                        <label for="passwd">Campo</label>
+                        <input type="password" name="passwd">       
+                    </div>  
+                </section>
+
+                <!--Campo para archivo-->
+                <section class="container">
+                    <h2>Campo para archivo</h2>
+                    <div class="field-container">
+                        <label for="file">Campo</label>
+                        <input type="file" name="file"> 
+                    </div>      
+                </section>
+
+                <!--Campo con select-->
+                <section class="container">
+                    <h2>Campo con select</h2>
+                    <div class="field-container">
+                        <label for="select">Campo</label>
+                        <select name="select" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>       
+                    </div>
+                </section>
+
+                <!--text area-->
+                <section class="container">
+                    <h2>Text area</h2>
+                    <div class="field-container">
+                        <label for="textarea">Campo</label>
+                        <textarea name="textarea" id=""></textarea>      
+                    </div>
+                </section>
+
+                <!--Buton de subir-->
+                <section class="container btn-margin">
+                    <h2>Boton de subir</h2>
+                    <div class="container-btn flex-center">
+                        <button>SUBIR</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="format left-animation">
+
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PRACTICA CSS</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: rgb(28, 28, 28);
+            }
+
+            .flex-row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                margin: 80px;
+                border: solid 2px black;
+                padding: 80px;
+                position: relative;
+            }
+        
+            .body-p  {
+                position: relative;
+                background-color: rgb(255, 106, 0);
+                width: 250px;
+                height: 150px;
+                border-radius: 80px;
+            }
+
+            .eye {
+                position: absolute;
+                top: 20px;
+                left: 30px;
+                background-color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+
+            .eye div {
+                position: relative;
+            }
+
+            .pupil {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                left: 1px;
+                top: 2px;
+                border-radius: 50%;
+                background-color: black;
+            }
+
+            .chainsaw {
+                position: relative;
+            }
+                    
+            .chainsaw div {
+                position: absolute;
+                top: -40px;
+                right: -30px;
+                background-color: gray;
+                width: 120px;
+                height: 50px;
+                border-radius: 20px 0px 0px 20px;
+                z-index: -1;
+            }
+
+            .chainsaw div div {
+                position: absolute;
+                top: 10px;
+                right: 25px;
+                background-color: rgb(208, 208, 208);
+                width: 80px;
+                height: 30px;
+                border-radius: 20px 0px 0px 20px;
+            }
+
+            .legs {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 80px;
+                right: 190px;
+            }
+
+            .leg {
+                width: 40px;
+                height: 50px;
+                background-color: rgb(255, 106, 0);
+                border-radius: 0 0 20px 20px;
+            }
+
+            .handle {
+                position: relative;
+                left: 120px;
+                top: -60px;
+                z-index: -1;
+            }
+            
+            .handle div {
+                width: 20px;
+                height: 80px;
+                background-color: rgb(32, 32, 32);
+                transform: rotate(45deg);
+            }
+
+            .mouth {
+                position: relative;
+            }
+
+            .mouth div {
+                position: absolute;
+               
+                left: 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border-bottom: 5px solid black;
+                transform: rotate(-45deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container flex-row">
+            <div class="chainsaw">
+                <div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="body-p">
+                <div class="handle">
+                    <div></div>
+                </div>
+                <div>
+                    <div class="eye">
+                        <div>
+                            <div class="pupil"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mouth">
+                    <div></div>
+                </div>
+            </div>
+            <div class="legs">
+                <div class="leg"></div>
+                <div class="leg" style="margin-left: 50px;"></div>
+            </div>
+        </div>
+    </body>
+</html>
