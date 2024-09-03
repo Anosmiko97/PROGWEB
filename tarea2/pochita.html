@@ -26,6 +26,10 @@
                 margin-top: 40%;
                 padding: 20px;
                 position: relative;
+
+                animation: pochis;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
             }
         
             .body-p  {
@@ -136,9 +140,20 @@
                 height: 300px;
             }
 
+            @keyframes pochis {
+                0% {
+                    transform: translateX(100%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
         </style>
     </head>
     <body>
+        <audio autoplay src="./media/OP Chainsaw Man (CUMBIA REMIX) - Dj Santiago Cejas.mp3"></audio>
         <div class="container flex-row">
             <div class="chainsaw">
                 <div>
