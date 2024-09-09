@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./media/jesse.webp);
+    padding: 9rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+main {
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Walter white styles */
+.container-w {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.hat {
+    background-color: black;
+    height: 60px;
+    width: 150px;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.hat-y {
+    position: absolute;
+    top: 100%;
+    left: -25px;
+    background-color: black;
+    width: 200px;
+    height: 10px;
+}
+
+.glasses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.line {
+    background-color: black;
+    width: 100px;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+}
+
+.eye {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.mouth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.beard {
+    background-color: black;
+    width: 90px;
+    height: 80px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 40px 40px 20px 20px;
+}
+
+.b-mouth {
+    background-color: white;
+    width: 50px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+
+.circle {
+    background-color: white;
+    margin-top: .5rem;
+    width: 15px;
+    height: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
