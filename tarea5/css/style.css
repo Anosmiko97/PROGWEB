@@ -88,6 +88,10 @@ nav {
     align-items: center;
 }
 
+.all-with {
+    width: 100%;
+}
+
 /* El tamano es el mismo que el del titulo */
 .uabsc-container img {
     width: 3.5rem;
