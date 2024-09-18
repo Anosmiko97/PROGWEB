@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    height: 900vh;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 0px 5px 0px black;
+    z-index: 200;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.green-bg01 {
+    background-color: #53A548;
+}
+
+.green-bg02 {
+    background-color: #4C934C;
+}
+
+.black-bg01 {
+    background-color: black;
+}
+
+.transparent-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.p-05 {
+    padding: .5rem;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+.white-text {
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.search-bar {
+    background-color: #D7DEDC;
+    color: #7B7B7B;
+    padding: .5rem;
+    border-radius: 10px;
+    display: flex;
+    border: 0px;
+    gap: 10px;
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px  rgb(90, 90, 90);
+}
+
+.search-bar:hover {
+    background-color: #7B7B7B;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.space-b {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* El tamano es el mismo que el del titulo */
+.uabsc-container img {
+    width: 3.5rem;
+    height: auto;
+}
