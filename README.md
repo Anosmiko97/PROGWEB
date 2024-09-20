@@ -9,3 +9,4 @@
 - Ejercicio1 >> https://anosmiko97.github.io/PROGWEB/tarea3/walter.html
 - Ejercicio2 >> https://anosmiko97.github.io/PROGWEB/tarea4/index.html
 - Header de pagina >> https://anosmiko97.github.io/PROGWEB/tarea5/index.html
+- Formulario con estilo >> https://anosmiko97.github.io/PROGWEB/tarea6/index.html
