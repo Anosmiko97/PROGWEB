@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgb(81, 81, 81);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.container {
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 4px rgb(81, 81, 81);
+}
+
+.field {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: .2rem;
+}
+
+input:focus {
+    box-shadow: 1px 1px 4px 4px rgb(9, 125, 184);
+
+}
+
+input:hover {
+    box-shadow: 1px 1px 4px 4px rgb(9, 125, 184);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    padding: .5rem;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 1px 1px rgb(81, 81, 81);
+}
+
+button:hover {
+    box-shadow: 1px 1px 4px 4px rgb(9, 125, 184);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+    box-shadow: 0px 0px 4px 0px rgb(81, 81, 81);
+}
+
+.maldito-footer-quedate-abajo {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
