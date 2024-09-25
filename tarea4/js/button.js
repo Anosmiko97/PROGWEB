@@ -1,5 +1,7 @@
-const button = document.getElementById("btn");
+const buttons = document.getElementsByClassName("btn");
 
-button.addEventListener("click", function() {
-    alert("No hace nada*");
-});
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        alert("No hace nada*");
+    });
+}
