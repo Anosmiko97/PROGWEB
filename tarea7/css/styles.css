@@ -138,7 +138,7 @@ footer h2 {
     background-color: var(--blue-bg);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .open-menu,
     .close-menu {
         display: block;

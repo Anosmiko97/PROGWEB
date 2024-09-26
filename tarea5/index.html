@@ -10,35 +10,74 @@
 </head>
 <body>
     <header>
-        <div class="container green-bg02 white-text">
-            <nav>
-                <a class="white-text" href="">Pagina de la uabcs</a>
-                <a class="white-text" href="">Facebook de la uabcs</a>
-                <a class="white-text" href="">Capivara</a>
-            </nav>
-        </div>
-        <div class="container green-bg01 white-text flex space-b">
-            <div class="uabsc-container flex">
-                <img src="./media/logo_uabcs.png" alt="">
-                <h1>UABCS ZOO</h1>
+        <section class="green-bg02">
+            <div class="container green-bg02 white-text right-animation">
+                <nav>
+                    <a class="white-text hover-gray" href="">Pagina de la uabcs</a>
+                    <a class="white-text hover-gray" href="">Facebook de la uabcs</a>
+                    <a class="white-text hover-gray" href="">Capivara</a>
+                </nav>
             </div>
-            <button class="search-bar space-b">
-                <p>Busca informacion de animales aqui</p>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
+        </section>
+        <section class="green-bg01">
+            <div class="container green-bg01 white-text flex space-b left-animation">
+                <div class="uabsc-container flex">
+                    <img src="./media/logo_uabcs.png" alt="">
+                    <h1>UABCS ZOO</h1>
+                </div>
+                <button id="search-button" class="search-bar space-b hover-gray-bg">
+                    <p>Busca informacion de animales aqui</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <script src="./js/search_input.js"></script>
+            </div>
+        </section>
         <div class="container p-05 transparent-bg white-text">
             <nav>
-                <a class="white-text no-text-decoration" href="">Habitad</a>
-                <a class="white-text no-text-decoration" href="">Alimentacion</a>
-                <a class="white-text no-text-decoration" href="">Reproduccion</a>
-                <a class="white-text no-text-decoration" href="">Conducta</a>
+                <a class="white-text no-text-decoration hover-gray hover-box" href="">Habitad</a>
+                <a class="white-text no-text-decoration hover-gray hover-box" href="">Alimentacion</a>
+                <a class="white-text no-text-decoration hover-gray hover-box" href="">Reproduccion</a>
+                <a class="white-text no-text-decoration hover-gray hover-box" href="">Conducta</a>
             </nav>
         </div>
     </header>
     <main>
-        <img src="./media/capivaras.jpg" class="all-with" alt="">
-        
+        <section class="main-img">
+            <!--<img src="./media/capivaras.jpg" class="" alt="">-->
+        </section>        
+        <section class="container">
+            <div class="title">
+                <h2>El capivara</h2>
+                <div></div>
+            </div>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum molestias sed quisquam vitae modi voluptas expedita incidunt odit id alias, in ea ipsa pariatur suscipit, iure inventore blanditiis aliquam repudiandae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magnam fuga dicta facilis, tempora voluptates! Odio maiores in provident cumque quis, laboriosam cupiditate quo dolorum optio ullam sint corrupti rem.</p>
+        </section>
+        <section class="container gray-bg01">
+            <div class="title">
+                <h2>Descubre como son</h2>
+                <div></div>
+            </div>
+            <div></div>
+        </section>
+        <section class="container" id="biology">
+            <div class="title">
+                <h2>Descubre como son</h2>
+                <div></div>
+            </div>
+            <div class="container1rem green-bg02 info">
+                <h3>Habitad</h3>
+            </div>
+            <div class="container1rem green-bg02 info white-text">
+                <h3>Alimentacion</h3>
+            </div>
+            <div class="container1rem green-bg02 info white-text">
+                <h3>Reproduccion</h3>
+            </div>
+            <div class="container1rem green-bg02 info white-text">
+                <h4>Conducta</h4>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
