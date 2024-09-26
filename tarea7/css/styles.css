@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-bg: rgb(255, 255, 255);
+    --white1-bg: rgb(241, 240, 240);
+    --white-border: rgb(220, 218, 218);
+    --blue-bg: rgb(0, 140, 255);
+    --darkblue-bg: rgb(4, 16, 187);
+}
+
+body {
+    background-color: var(--white-bg);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: var(--white1-bg);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid var(--white-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px gray;
+    border: 2px solid var(--white-border);
+    width: 20rem;
+}
+
+.card div {
+    padding: 1rem;
+}
+
+.img-bc {
+    background-image: url(../media/alfred.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+/*
+@media screen and (min-width: 800px) {
+    .img-bc {
+        height: 400px;
+    }
+    
+}*/
+
+button {
+    padding: 1rem;
+    background-color: var(--blue-bg);
+    border: 0px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: .5rem;
+}
+
+.btn:hover {
+    background-color: var(--darkblue-bg);
+    color: gray;
+}
+
+footer {
+    border-top: 2px solid rgb(220, 218, 218);
+}
+
+footer h2 {
+    color: gray;
+    font-weight: normal;
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+}
+
+
+/* Estilos del menu  */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    color: #1c1c1c;
+}
+
+.nav-list li a:hover {
+    color: var(--blue-bg);
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+.open-menu:hover {
+    background-color: var(--blue-bg);
+}
+
+.close-menu:hover {
+    background-color: var(--blue-bg);
+}
+
+@media screen and (max-width: 700px) {
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .open-menu {
+        color: #1c1c1c;
+    }
+
+    .close-menu {
+        color: black;
+    }
+
+    button i {
+        font-size: 2rem;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--white-bg);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: black;
+    }
+}
