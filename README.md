@@ -11,3 +11,4 @@
 - Header de pagina >> https://anosmiko97.github.io/PROGWEB/tarea5/index.html
 - Formulario con estilo >> https://anosmiko97.github.io/PROGWEB/tarea6/index.html
 - Flex con cartas >> https://anosmiko97.github.io/PROGWEB/tarea4/index.html
+- Varibles de css >> https://anosmiko97.github.io/PROGWEB/tarea7/index.html
