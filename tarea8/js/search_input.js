@@ -3,19 +3,31 @@ Script para hacer funcional
 la barra de busqueda
 */
 
-const input = document.querySelector('#search-button');
+const inputMobile = document.querySelector('#search-button-m');
+const inputDesktop = document.querySelector('#search-button-d');
 const defaultText = 'Buscar informacion';
 
-/* Remover si esta clickeado */
-input.addEventListener('focus', () => {
-    if (input.value == defaultText) {
-        input.value = '';
+/* Desktop */
+inputDesktop.addEventListener('focus', () => {
+    if (inputDesktop.value == defaultText) {
+        inputDesktop.value = '';
+    } 
+});
+inputDesktop.addEventListener('blur', () => {
+    if (inputDesktop.value == '') {
+        inputDesktop.value = defaultText;
     } 
 });
 
-/* Cuando no esta enfocado poner texto */
-input.addEventListener('blur', () => {
-    if (input.value == '') {
-        input.value = defaultText;
+/* Desktop */
+inputMobile.addEventListener('focus', () => {
+    if (inputMobile.value == defaultText) {
+        inputMobile.value = '';
     } 
 });
+inputMobile.addEventListener('blur', () => {
+    if (inputMobile.value == '') {
+        inputMobile.value = defaultText;
+    } 
+});
+
