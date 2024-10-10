@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentary</title>
+    <script src="https://kit.fontawesome.com/e9d598791d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <!--Menu hamburguesa-->
+        <section id="nav" class="green-bg02">
+            <button id="open" class="open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav green-bg02 white-text right-animation">
+                <nav class="ham" id="ham">
+                    <button class="close-menu" id="close">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+
+                    <div class="search-mobil">
+                        <input value="Buscar informacion" id="search-button-m" type="text" class="search-bar hover-gray-bg">
+                    </div>
+
+                    <div class="links text-white">
+                        <h3 class="mb-0">Links</h3>
+                        <a class="text-white hover-gray hover-box" href="./index.html">Regresar a pagina principal</a>
+                        <a class="text-white hover-gray hover-box" href="">Pagina de la uabcs</a>
+                        <a class="text-white hover-gray hover-box" href="">Facebook de la uabcs</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="green-bg01 main-header">
+            <div class="container-c green-bg01 text-white flex space-b left-animation">
+                <div class="uabsc-container flex">
+                    <img src="./media/logo_uabcs.png" alt="">
+                    <h1 class="fw-bold">UABCS ZOO</h1>
+                </div>
+                <div class="search-desk">
+                    <input value="Buscar informacion" id="search-button-d" type="text" class="search-bar hover-gray-bg">
+                </div>
+            </div>
+        </section>
+    </header>
+    <script src="./js/menu.js"></script>
+    <script src="./js/search_input.js"></script>
+    <main class="right-animation mt-3">
+        <div class="title">
+            <h2>Documental del capivara</h2>
+        </div>
+        <!--Video documental-->
+        <section class="container p-4 gray-bg01 rounded">
+            <video controls="true" class="container-fluid" src="./media/documentary.mp4"></video>
+        </section>
+    </main>
+    <footer>
+        <div class="footer left-animation container-fluid mt-4 p-4">
+            <section class="line">
+                <h3>Contacto</h3>
+                <div class="text-white">
+                    <p>Telefono: (55) 369 333 3333</p>
+                    <p>Correo: capivara@gmail.com</p>
+                    <p>Ubicacion: La paz, Col. centro, cp.23000</p>
+                </div>
+            </section>
+            <section class="flex-right">
+                <img class="img-footer" src="./media/logo_uabcs.png" alt="">
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
