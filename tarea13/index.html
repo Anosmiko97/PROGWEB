@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-light">
+    <header>
+        <h1 class="container-fluid bg-dark text-white text-center p-2 shadow">CALCULADORA GENERICA</h1>
+    </header>
+    <main class="mt-4 bg-light p-5">
+        <section class="container d-flex justify-content-center">
+            <div class="bg-secondary shadow rounded p-3 text-center cal">
+                <div class="container text-center text-white border-bottom">
+                    <div class="row">
+                      <div class="col">
+                        <p class="">Numero 1</p>
+                      </div>
+                      <div class="col">
+                        Operador
+                      </div>
+                      <div class="col">
+                        <p class="">Numero 2</p>
+                      </div>
+                      <div class="col">
+                        <p class="">Resultado</p>
+                      </div>
+                      <div class="col">
+                        <p class="">Resultado</p>
+                      </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <input id="num1" class="form-control rounded" type="text">
+                        </div>
+                        <div class="col">
+                            <input id="operator" class="form-control rounded" type="text">
+                        </div>
+                        <div class="col">
+                            <input id="num2" class="form-control rounded" type="text">
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <p class="fs-1">=</p>
+                        </div>
+                        <div class="col">
+                            <div id="result" class="form-control rounded"></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="mt-3 d-flex justify-content-center gap-3">
+                    <button id="delete">BORRAR</button>
+                    <button id="calculate">CALCULAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <footer></footer>
+    <script src="./boostrap/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
