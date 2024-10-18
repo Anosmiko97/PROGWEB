@@ -1,0 +1,15 @@
+.main-btn {
+    background-color: black;
+    color: white;
+}
+
+.main-btn:hover {
+    background-color: gray;
+}
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+
