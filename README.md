@@ -18,3 +18,4 @@
 
 ## UNIDAD DE JS
 - Ejercicio1 >> https://anosmiko97.github.io/PROGWEB/tarea13/index.html
+- Ejercicio2 >> https://anosmiko97.github.io/PROGWEB/tarea12/index.html
