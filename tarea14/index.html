@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-light">
+    <header>
+        <h1 class="container-fluid bg-dark text-white text-center p-2 shadow">CALCULADORA GENERICA</h1>
+    </header>
+    <main class="mt-4 bg-light">
+        <section class="container bg-secondary p-3 rounded shadow cal">
+            <div class="output"></div>
+            <div class="pt-3 text-center">
+                    <!--Fila 1-->
+                    <div class="row">
+                        <div class="col">
+                          <button class="button">0</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">1</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">2</button>
+                        </div>
+                        <div class="col">
+                            <button class="button">/</button>
+                          </div>
+                      </div>
+                    <!--Fila 1-->
+
+                    <!--Fila 2-->
+                    <div class="row">
+                        <div class="col">
+                          <button class="button">3</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">4</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">5</button>
+                        </div>
+                        <div class="col">
+                            <button class="button">*</button>
+                          </div>
+                      </div>
+                    <!--Fila 2-->
+
+                    <!--Fila 3-->
+                    <div class="row">
+                        <div class="col">
+                          <button class="button">6</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">7</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">8</button>
+                        </div>
+                        <div class="col">
+                            <button class="button">-</button>
+                          </div>
+                      </div>
+                    <!--Fila 3-->
+
+                    <!--Fila 4-->
+                    <div class="row">
+                        <div class="col">
+                          <button class="button">9</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">C</button>
+                        </div>
+                        <div class="col">
+                          <button class="button">=</button>
+                        </div>
+                        <div class="col">
+                            <button class="button">+</button>
+                          </div>
+                      </div>
+                    <!--Fila 4-->
+            </div>
+        </section>
+        
+        <div class="container text-center mt-4">
+            <button id="show-btn" class="btn btn-secondary">Mostrar historial de calculos</button>
+        </div>
+        <section id="history" class="container mt-3 shadow p-1 rounded">
+            <div id="list-cal" class="p-2"></div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <footer></footer>
+    <script src="./boostrap/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
