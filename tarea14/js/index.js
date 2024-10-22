@@ -11,7 +11,6 @@ function calculate(operation) {
     try {
         let cal = eval(operation);
         listCal.push(operation + " = " + cal);
-        input = "";
         return cal;
     } catch {
         output.textContent = "SINTAX ERROR";
