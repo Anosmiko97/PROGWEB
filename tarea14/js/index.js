@@ -9,10 +9,10 @@ let listCal = [];
 // Calculadora
 function calculate() {
     try {
-        let cal = eval(input);
-        listCal.push(input + " = " + cal);
-        output.value = "";
-        draw(input + " = " + cal)
+        let cal = eval(operation);
+        listCal.push(operation + " = " + cal);
+        input = "";
+        return cal;
     } catch {
         output.textContent = "SINTAX ERROR";
     }
