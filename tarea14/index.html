@@ -13,21 +13,21 @@
     </header>
     <main class="mt-4 bg-light">
         <section class="container bg-secondary p-3 rounded shadow cal">
-            <div class="output"></div>
+            <input id="output" disabled>
             <div class="pt-3 text-center">
                     <!--Fila 1-->
                     <div class="row">
                         <div class="col">
-                          <button class="button">0</button>
+                          <button onclick="draw(this.value)" class="button" value="0">0</button>
                         </div>
                         <div class="col">
-                          <button class="button">1</button>
+                          <button onclick="draw(this.value)" class="button" value="1">1</button>
                         </div>
                         <div class="col">
-                          <button class="button">2</button>
+                          <button onclick="draw(this.value)" class="button" value="2">2</button>
                         </div>
                         <div class="col">
-                            <button class="button">/</button>
+                            <button onclick="draw(this.value)" class="button" value="/">/</button>
                           </div>
                       </div>
                     <!--Fila 1-->
@@ -35,16 +35,16 @@
                     <!--Fila 2-->
                     <div class="row">
                         <div class="col">
-                          <button class="button">3</button>
+                          <button onclick="draw(this.value)" class="button" value="3">3</button>
                         </div>
                         <div class="col">
-                          <button class="button">4</button>
+                          <button onclick="draw(this.value)" class="button" value="4">4</button>
                         </div>
                         <div class="col">
-                          <button class="button">5</button>
+                          <button onclick="draw(this.value)" class="button" value="5">5</button>
                         </div>
                         <div class="col">
-                            <button class="button">*</button>
+                            <button onclick="draw(this.value)" class="button" value="*">*</button>
                           </div>
                       </div>
                     <!--Fila 2-->
@@ -52,16 +52,16 @@
                     <!--Fila 3-->
                     <div class="row">
                         <div class="col">
-                          <button class="button">6</button>
+                          <button onclick="draw(this.value)" class="button" value="6">6</button>
                         </div>
                         <div class="col">
-                          <button class="button">7</button>
+                          <button onclick="draw(this.value)" class="button" value="7">7</button>
                         </div>
                         <div class="col">
-                          <button class="button">8</button>
+                          <button onclick="draw(this.value)" class="button" value="8">8</button>
                         </div>
                         <div class="col">
-                            <button class="button">-</button>
+                            <button onclick="draw(this.value)" class="button" value="-">-</button>
                           </div>
                       </div>
                     <!--Fila 3-->
@@ -69,16 +69,16 @@
                     <!--Fila 4-->
                     <div class="row">
                         <div class="col">
-                          <button class="button">9</button>
+                          <button onclick="draw(this.value)" class="button" value="9">9</button>
                         </div>
                         <div class="col">
-                          <button class="button">C</button>
+                          <button onclick="clear()" class="button">C</button>
                         </div>
                         <div class="col">
-                          <button class="button">=</button>
+                          <button onclick="calculate()" class="button">=</button>
                         </div>
                         <div class="col">
-                            <button class="button">+</button>
+                            <button onclick="draw(this.value)" class="button" value="+">+</button>
                           </div>
                       </div>
                     <!--Fila 4-->

@@ -23,6 +23,10 @@ def create_files(dir):
     # Crear carpeta media
     ruta_media = os.path.join(ruta_base, 'media')
     os.mkdir(ruta_media)
+    
+    # Crear carpeta JS
+    ruta_media = os.path.join(ruta_base, 'js')
+    os.mkdir(ruta_media)
 
     
 def create_dirs():
@@ -31,10 +35,14 @@ def create_dirs():
     
     dirs = [dir for dir in content 
             if not (dir == ext[0] or dir == ext[1] or dir == ext[2])]
-    new_dir = f"tarea{len(dirs)}"
+    new_dir = f"tarea{len(dirs)+2}"
     os.mkdir(new_dir)  
     
     create_files(new_dir)
         
 if __name__ == "__main__":
-    create_dirs()
+    try:
+        create_dirs()
+    except Exception as e:
+        print(f"[!] Error: {e}")
+        

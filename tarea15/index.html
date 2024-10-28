@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-light">
+    <header class="container-fluid text-center shadow p-2 d-flex justify-content-between pe-4 ps-4">
+        <h1 class="">Lista de tareas</h1>
+        <!-- Button para crear tareas -->
+        <button id="add-task" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Agregar tarea
+        </button>
+    </header>
+    <main class="mt-4">
+       <section class="container-fluid p-2 text-center">
+            <!--Contenedor de tareas-->
+            <div class="container shadow p-2">
+                <h3 class="border-bottom p-2">Tareas por hacer</h3>
+                <div id="tasks" class="container">
+                    
+                     <!--Ejemplo de task
+                    <div class="container-fluid">
+                        <div class="container-fluid d-flex justify-content-between align-center gap-2 border-bottom p-2">
+                            <div class="checkbox">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Tarea
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+       </section>
+
+    </main>
+    <footer></footer>
+    <!-- Modal para crear tareas-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="">
+                  <input id="task-todo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese la tarea aqui">
+                </div>                
+            </div>
+            <div class="modal-footer">
+            <button id="cancel" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button id="confirm-add-task" type="button" class="btn btn-success">Agregar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./js/background.js"></script>
+    <script src="./js/task.js"></script>
+    <script src="./boostrap/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

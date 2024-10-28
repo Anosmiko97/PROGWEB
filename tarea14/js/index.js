@@ -1,5 +1,5 @@
 const buttons = document.getElementsByClassName("button")
-const output = document.querySelector(".output");
+const output = document.querySelector("#output");
 const history = document.querySelector("#history");
 const showBtn = document.querySelector("#show-btn");
 const list = document.querySelector("#list-cal");
@@ -7,30 +7,32 @@ let input = "";
 let listCal = [];
 
 // Calculadora
-function calculate(operation) {
+function calculate() {
     try {
-        let cal = eval(operation);
-        listCal.push(operation + " = " + cal);
-        input = "";
-        return cal;
+        let cal = eval(input);
+        listCal.push(input + " = " + cal);
+        output.value = "";
+        draw(input + " = " + cal)
     } catch {
         output.textContent = "SINTAX ERROR";
     }
 }
 
+function clear() {
+    input = "";
+    output.value = "";
+}
+
+function draw(btn) {
+    console.log(btn);
+    input += btn;
+    output.value = input;
+}
+
 for (let btn of buttons) {
-    btn.addEventListener("click", () => {
-        console.log(btn.textContent);
-        if (btn.textContent === "=") {
-            output.textContent = calculate(input)
-        } else if (btn.textContent === "C") {
-            input = ""
-            output.textContent = ""
-        } else {
-            input += btn.textContent;
-            output.textContent = input;
-        }
-    })
+    btn.addEventListener("keydown", (event) => {
+        console.log("log")
+    });
 }
 
 // Historial del calculos
