@@ -19,5 +19,7 @@
 ## UNIDAD DE JS
 - Ejercicio1 >> https://anosmiko97.github.io/PROGWEB/tarea13/index.html
 - Ejercicio2 >> https://anosmiko97.github.io/PROGWEB/tarea12/index.html
-- Ejercicio1 >> https://anosmiko97.github.io/PROGWEB/tarea14/index.html
-- Ejercicio1 >> https://anosmiko97.github.io/PROGWEB/tarea15/index.html
+- Ejercicio3 >> https://anosmiko97.github.io/PROGWEB/tarea14/index.html
+- Ejercicio4 >> https://anosmiko97.github.io/PROGWEB/tarea15/index.html
+- Ejercicio4 >> https://anosmiko97.github.io/PROGWEB/tarea16/index.html
+
