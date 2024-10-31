@@ -1,0 +1,10 @@
+.cat-card {
+    max-width: 600px;
+    box-shadow: 0 6px 30px rgba(255, 217, 0, 0.2);
+    transition: transform 1s ease;
+}
+
+.cat-card:hover {
+    transform: scale(1.1);
+}
+
