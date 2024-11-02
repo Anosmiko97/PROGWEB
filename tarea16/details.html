@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles</title>
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-white">
+    <header class="text-center shadow p-2 mb-4">
+        <h1>Galeria de gatos</h1>
+    </header>
+    <main class="pt-4">
+        <div id="catDetails" class="cat-details container-fluid d-flex justify-content-around gap-4 shadow rounded p-0">
+            <img id="catImage" class="img-fluid" src="" alt="">
+            <div class="p-2">
+                <h1 id="catName"></h1>
+                <p><strong>Temperamento:</strong> <span id="catTemperament"></span></p>
+                <p><strong>Años de vida:</strong> <span id="catLifeSpan"></span></p>
+                <p><strong>Descripción:</strong> <span id="catDescription"></span></p>
+                <p><strong>Amigable con niños:</strong> <span id="childFriendly"></span></p>
+                <p><strong>Amigable con perros:</strong> <span id="catFriendly"></span></p>
+                <p><strong>Origen:</strong> <span id="origin"></span></p>
+                <p><strong>Enlace a Wikipedia:</strong> <a id="wikiLink" href="#" target="_blank">Más información</a></p>
+            </div>
+        </div>
+
+        <div id="returnMainPage" class="w-100 text-center mt-4 mb-4">
+            <a class="btn btn-success fs-4">Regresar a la galeria</a>
+        </div>
+    </main>
+
+    <script type="module" src="./js/details.js"></script>
+</body>
+</html>
