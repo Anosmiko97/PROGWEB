@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 0px 5px 0px black;
+    z-index: 200;
+}
+
+.container-c {
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.container1rem {
+    padding: 1rem;
+}
+
+.green-bg01 {
+    background-color: #53A548;
+}
+
+.green-bg02 {
+    background-color: #4C934C;
+}
+
+.black-bg01 {
+    background-color: black;
+}
+
+.gray-bg01 {
+    background-color: #D7DEDC;
+}
+
+.transparent-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+.title h2 {
+    border-bottom: 3px solid yellow;
+}
+
+nav {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.search-bar {
+    background-color: #D7DEDC;
+    color: #7B7B7B;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 0px;
+    gap: 10px;
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px  rgb(90, 90, 90);
+}
+
+.hover-gray-bg {
+    transition-property: background-color color; 
+    transition-duration: .5s;
+}
+
+.hover-gray-bg:hover {
+    background-color: #7B7B7B;
+    color: black;
+}
+
+.search-bar:focus {
+    background-color: #dedede;
+    color: black;
+    outline: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.space-b {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* El tamano es el mismo que el del titulo */
+.uabsc-container img {
+    width: 3.5rem;
+    height: auto;
+}
+
+/* Estos estilos van de la mano */
+.hover-gray {
+    transition-property: color;
+    transition-duration: .5s;
+}
+
+.hover-gray:hover {
+    color: rgb(177, 177, 177);
+}
+
+.hover-box {
+    transition-property: box-shadow ;
+    transition-duration: .5s;
+}
+
+.hover-box:hover {
+    box-shadow: 0px 2px 0px 0px  rgb(213, 213, 213);
+}
+
+.left-animation {
+    animation: left .5s linear 1;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.right-animation {
+    animation: right .5s linear 1;
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.top-animation {
+    animation: top .5s linear 1;
+}
+
+@keyframes top {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.main-img {
+    background-image: url(../media/capivaras.jpg);
+    width: 100%;
+    height: 20rem;
+    border-bottom: .5rem solid black;
+}
+
+.info {
+    margin-bottom: 1rem;
+}
+
+.d-flex {
+    background-color: black;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
+}
+
+.img {
+    width: 30%;
+    height: 18rem;
+}
+
+/*Estilos para el menu*/
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+.nav-page-mobile {
+    display: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.links h3 {
+    display: none;
+}
+
+.search-mobil {
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    header section {
+        align-items: center;
+        display: flex;
+        justify-content: right;
+    }
+
+    .img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    .nav-page-desktop {
+        display: none;
+    }
+
+    .links h3 {
+        display: block;
+    }
+
+    .nav {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }    
+
+    h3 {
+        margin-bottom: 1rem;
+        border-bottom: 3px solid yellow;
+    }
+
+    .open-menu i {
+        margin: .5rem;
+    }
+
+    .close-menu i {
+        margin-bottom: 1rem;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .close-menu i, 
+    .open-menu i {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    .ham {
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #53A548;;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+        transition: opacity .5s ease, visibility 0.3s ease;
+    }
+
+    .ham.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .container:has(.img) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-desk {
+        display: none;
+    }
+
+    .search-mobil {
+        display: block;
+    }
+
+    .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer img {
+        width: 3rem;
+        height: auto;
+    }
+}
+
+.footer {
+    color: yellow;
+    background-color: #1A181B;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #1A181B; 
+}
+
+.footer section {
+    padding: 1rem;
+    width: 50%;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: right;
+}
+
+.line {
+    border-right: white solid 2px;
+}
+
+.footer img {
+    width: 12rem;
+    height: auto;
+}
+
+.focus-item {
+    transition: transform ease .5s, box-shadow ease .5s;
+}
+
+.focus-item:hover {    
+    transform: scale(1.1);
+    box-shadow: 1px 2px 5px 5px  rgb(213, 213, 213);
+}
+
